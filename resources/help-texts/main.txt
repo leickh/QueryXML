@@ -1,0 +1,33 @@
+==========[ QueryXML Build Script Help ]==========
+Actions:
+- b  | build-all:
+    Build the library, all tests and all examples.
+
+- bl | build-library:
+    Build only the library
+
+- bx | build-examples:
+    Build only all examples.
+
+- bt | build-tests:
+    Build only all tests.
+
+- lx | list-examples:
+    List the names of all readily-built examples.
+
+- lt | list-tests:
+    List the names of all readily-built tests.
+
+- rx | run-example:
+    Run a single named example. The examples are
+    identified as MODULE_NAME:EXAMPLE_NAME.
+
+- rt | run-tests:
+    Run a single named test. . The test are
+    identified as MODULE_NAME:TEST_NAME.
+
+- h | help
+    Display general help information about the
+    software and build script.
+
+> None of the actions currently have parameters.

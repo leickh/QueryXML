@@ -1,0 +1,16 @@
+
+*
+!*/
+!*.*
+
+*.a
+*.elf
+*.o
+*.so
+
+*.dll
+*.exe
+*.lib
+
+.build/
+.private/
