@@ -3,7 +3,7 @@
 cd $(dirname $0)
 PROJECT_PATH=$(pwd)
 
-COMPILER_OPTIONS="-g2 -O3"
+COMPILER_OPTIONS="-g2 -O3 -Wall -Wextra -Wpedantic"
 
 fetch_sources() {
     local SEARCH_PATH="$1"
@@ -57,6 +57,7 @@ build_core_library() {
         compile_source_unit "$SOURCE_NAME"
     done
 
+    rm "$PROJECT_PATH/.build/libqueryxml.a"
     ar -rvs "$PROJECT_PATH/.build/libqueryxml.a" "$PROJECT_PATH/.build/modules/core/objects/"*.o
 
     gcc -shared \
