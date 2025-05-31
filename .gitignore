@@ -12,5 +12,7 @@
 *.exe
 *.lib
 
+vgcore.*
+
 .build/
 .private/
